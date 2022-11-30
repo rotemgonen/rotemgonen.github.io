@@ -1,0 +1,18 @@
+.btn-outline-secondary {
+    border-color: white;
+}
+
+.web-footer {
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid gainsboro;
+    margin-top: auto;
+    background-color: white;
+}
+
+.zoom:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    background-color: rgb(97, 97, 97);
+    color: azure;
+}
