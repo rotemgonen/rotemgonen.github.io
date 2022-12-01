@@ -10,8 +10,7 @@
     background-color: white;
 }
 
-.zoom:hover {
-    transition: 0.5s;
+.box:hover {
     background-color: rgb(97, 97, 97);
     color: azure;
     cursor: pointer;
