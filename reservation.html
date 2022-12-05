@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="icon.jpg">
+    <link rel="icon" href="photos/icon.jpg">
 </head>
 <header class="d-flex justify-content-center border-bottom mb-3 fixed-top bg-white">
     <ul class="nav">
@@ -19,12 +19,47 @@
 
 
 <body>
-    <div class="container mt-5">
-        <div class="p-3 mb-4 bg-light rounded-3 text-bg-light shadow">
+    <header class="container mt-5">
+        <div class="p-3 mb-4 bg-light rounded-5 text-bg-light shadow">
             <h1 class="display-5 fw-bold">RESERVATION</h1>
             <p class="fs-4">We advise visitors to check with the hotel ahead of time to see if a room is available on
                 the desired day.</p>
         </div>
+    </header>
+    <main class="container mt-5">
+        <form class="col col-lg-6 bg-light shadow mx-auto rounded-5 p-2">
+            <h5 class="col text-center text-decoration-underline">Please insert the required details</h5>
+            <div class="col-5 form-group mx-auto">
+                <label for="nameplace"> full name:</label>
+                <input type="text" class="form-control" id="nameplace" placeholder="full name">
+            </div>
+
+            <div class="col-5 form-group mx-auto">
+                <label for="arrivaldate">Arrival date:</label>
+                <input type="date" class="form-control" id="arrivaldate" placeholder="First name">
+            </div>
+
+            <div class="col-5 form-group mx-auto">
+                <label for="leavingdate">Leaving date:</label>
+                <input type="date" class="form-control" id="leavingdate" placeholder="Last name">
+            </div>
+            <div class="col-5 form-group mx-auto">
+                <label for="guests">Number of guests:</label>
+                <input type="number" min="0" class="form-control" id="guests" placeholder="Number of guests">
+            </div>
+            <div class="col-5 form-group mx-auto">
+                <label for="roomselect">Requested room:</label>
+                <select class="form-control" id="roomselect">
+                    <option>Bauhaus Room</option>
+                    <option>Garden Deluxe</option>
+                    <option>Poolview Deluxe</option>
+                </select>
+            </div>
+            <div class="form-actions text-center mt-2">
+                <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </main>
 </body>
 <footer class="web-footer fixed-bottom">
     <address class="mb-0">
