@@ -11,8 +11,12 @@
 }
 
 .box:hover {
-    background-color: rgb(97, 97, 97);
-    color: azure;
+    color: burlywood;
     cursor: pointer;
     transition: 1s;
+}
+
+body,
+html {
+    background-color: antiquewhite;
 }

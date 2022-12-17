@@ -10,17 +10,17 @@
     <link rel="icon" href="photos/icon.jpg">
 </head>
 <header class="d-flex justify-content-center border-bottom mb-3 fixed-top bg-white">
-    <ul class="nav">
+    <nav class="nav">
         <li><a href="#" class="btn btn-outline-secondary btn-md">Home</a></li>
         <li><a href="#" class="btn btn-outline-secondary btn-md">Reservation</a></li>
         <li><a href="#" class="btn btn-outline-secondary btn-md">About</a></li>
-    </ul>
+    </nav>
 </header>
 
 
 <body>
-    <header class="container mt-5">
-        <div class="bg-light rounded-5 text-bg-light shadow">
+    <header class="container-fluid mt-5">
+        <div class="bg-light rounded-3 text-bg-light p-3 shadow">
             <h1 class="display-5 fw-bold">RESERVATION</h1>
             <p class="fs-4">We advise visitors to check with the hotel ahead of time to see if a room is available on
                 the desired day.</p>
@@ -34,8 +34,8 @@
             <form class="col col-lg-6 bg-light shadow mx-auto rounded-5 p-2 mb-5">
                 <h5 class="col text-center text-decoration-underline">Please insert the required details</h5>
                 <div class="col-5 form-group mx-auto">
-                    <label for="nameplace"> full name:</label>
-                    <input type="text" class="form-control" id="nameplace" placeholder="full name">
+                    <label for="nameplace">Full name:</label>
+                    <input type="text" class="form-control" id="nameplace" placeholder="Full name">
                 </div>
                 <div class="col-5 form-group mx-auto">
                     <label for="Email">Email:</label>
@@ -51,7 +51,7 @@
                 </div>
                 <div class="col-5 form-group mx-auto">
                     <label for="guests">Number of guests:</label>
-                    <input type="number" min="0" class="form-control" id="guests" placeholder="Number of guests">
+                    <input type="number" min="1" class="form-control" id="guests" placeholder="Number of guests">
                 </div>
                 <div class="col-5 form-group mx-auto">
                     <label for="roomselect">Requested room:</label>
