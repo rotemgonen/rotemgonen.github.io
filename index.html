@@ -11,9 +11,9 @@
 </head>
 <header class="d-flex justify-content-center border-bottom fixed-top bg-white">
     <nav class="nav">
-        <li><a href="#" class="btn btn-outline-secondary btn-md">Home</a></li>
-        <li><a href="#" class="btn btn-outline-secondary btn-md">Reservation</a></li>
-        <li><a href="#" class="btn btn-outline-secondary btn-md">About</a></li>
+        <li><a href="index.html" class="btn btn-outline-secondary btn-md">Home</a></li>
+        <li><a href="reservation.html" class="btn btn-outline-secondary btn-md">Reservation</a></li>
+        <li><a href="about.html" class="btn btn-outline-secondary btn-md">About</a></li>
     </nav>
 </header>
 
@@ -23,7 +23,7 @@
             <div class="col-lg-6">
                 <img src="photos/hotelpic.jpg" class="img-fluid rounded-5" alt="picture of hotel">
             </div>
-            <div class="col-lg-6 my-3 rounded-5" style="background-color:rgb(226, 228, 228);">
+            <div class="col-lg-6 my-3 rounded-5 bg-light">
                 <h1 class="display-4 fw-bold mb-4">DISCOVER SHIKBOTIK LUXURY HOTEL</h1>
                 <p class="lead fs-4">Our hotel is a manifestation of a love for wide-open areas, stunning views, the
                     outdoors, sustainability, locally grown food, and the allure of the Golan Heights and the Galilee.
@@ -33,11 +33,11 @@
             </div>
         </div>
         <div class="container d-flex my-2 mx-auto row gap-5">
-            <button type="button" class="btn btn-secondary col-md p-5">
+            <button type="button" onclick="location.href = 'rooms.html'" class="btn btn-secondary col-md p-5">
                 <h1>Rooms</h1>
                 Please go through our collection of rooms. you might find the perfect spot.
             </button>
-            <button type="button" class="btn btn-secondary col-md p-5">
+            <button type="button" onclick="location.href = 'gallery.html'" class="btn btn-secondary col-md p-5">
                 <h1>Gallery</h1>
                 To discover more about the atmosphere in our hotel, kindly view the pictures in our Gallery.
             </button>
@@ -50,10 +50,11 @@
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+    <script src="script.js"></script>
 </body>
 <footer class="web-footer fixed-bottom">
     <address class="mb-0">
-        Feel free to mail us: <a href="mailto:OurNiceHotel.com">OurNiceHotel.com </address>
+        Feel free to mail us: <a href="mailto:OurNiceHotel.com">OurNiceHotel.com</address>
 </footer>
 
 </html>
