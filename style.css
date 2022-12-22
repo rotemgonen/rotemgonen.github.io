@@ -10,12 +10,6 @@
     background-color: white;
 }
 
-.box:hover {
-    color: burlywood;
-    cursor: pointer;
-    transition: 1s;
-}
-
 body,
 html {
     background-color: antiquewhite;
@@ -26,4 +20,9 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.img-thumbnail {
+    cursor: pointer;
+
 }
