@@ -42,4 +42,4 @@ $(document).ready(function () {
         }
     });
 });
-
+// select the correct option in the form when the room is selected
