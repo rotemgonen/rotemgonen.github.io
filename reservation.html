@@ -8,6 +8,8 @@
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="photos/icon.jpg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
 </head>
 <header class="d-flex justify-content-center border-bottom mb-3 fixed-top bg-white">
     <nav class="nav">
@@ -35,7 +37,8 @@
                 <h5 class="col text-center text-decoration-underline">Please insert the required details</h5>
                 <div class="col-5 form-group mx-auto">
                     <label for="nameplace">Full name:</label>
-                    <input type="text" class="form-control" id="nameplace" placeholder="Full name" required>
+                    <input type="text" class="form-control" id="nameplace" placeholder="Full name" required
+                        oninput="validateFullName(this)">
                 </div>
                 <div class="col-5 form-group mx-auto">
                     <label for="Email">Email:</label>
@@ -43,15 +46,15 @@
                 </div>
                 <div class="col-5 form-group mx-auto">
                     <label for="arrivaldate">Arrival date:</label>
-                    <input type="date" class="form-control" id="arrivaldate" placeholder="First name" required>
+                    <input type="date" class="form-control" id="arrivaldate" required>
                 </div>
                 <div class="col-5 form-group mx-auto">
                     <label for="leavingdate">Leaving date:</label>
-                    <input type="date" class="form-control" id="leavingdate" placeholder="Last name" required>
+                    <input type="date" class="form-control" id="leavingdate" required>
                 </div>
                 <div class="col-5 form-group mx-auto">
                     <label for="guests">Number of guests:</label>
-                    <input type="number" min="1" class="form-control" id="guests" placeholder="Number of guests"
+                    <input type="number" min="1" max="4" class="form-control" id="guests" placeholder="Number of guests"
                         required>
                 </div>
                 <div class="col-5 form-group mx-auto">
@@ -67,6 +70,7 @@
                 </div>
             </form>
     </main>
+    <script src="script.js"></script>
 </body>
 <footer class="web-footer fixed-bottom">
     <address class="mb-0">
