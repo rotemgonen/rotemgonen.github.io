@@ -43,3 +43,18 @@ $(document).ready(function () {
     });
 });
 // select the correct option in the form when the room is selected
+$(document).ready(function () {
+    $(document).on('click', '.room', function () {
+        roomOptionNum = this.getAttribute('val')
+        sessionStorage.setItem('roomtype', roomOptionNum)
+        location.href = 'reservation.html'
+    });
+});
+$(document).ready(function () {
+    storedval = sessionStorage.getItem('roomtype');
+    if (storedval) {
+        document.getElementById("roomselect").selectedIndex = storedval
+        sessionStorage.clear();
+        storedval = null;
+    }
+});
