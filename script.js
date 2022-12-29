@@ -42,7 +42,7 @@ $(document).ready(function () {
         }
     });
 });
-// select the correct option in the form when the room is selected
+// move to reservation page aamd select the correct option in the form when the room is selected
 $(document).ready(function () {
     $(document).on('click', '.room', function () {
         roomOptionNum = this.getAttribute('val')
